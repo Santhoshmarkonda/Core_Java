@@ -28,10 +28,10 @@ public class BankTransactionProcessor {
 		System.out.printf("Testing transaction: Account='%s', Amount='%s'%n", account, amount);
 		try {
 			processTransaction(account, amount);
-			System.out.println("✅ Transaction processed successfully.\n");
+			System.out.println("Transaction processed successfully.\n");
 		} catch (Exception e) {
-			System.out.println("❌ Exception: " + e);
-			System.out.println("🔍 Root Cause: " + e.getCause() + "\n");
+			System.out.println("Exception: " + e);
+			System.out.println("Root Cause: " + e.getCause() + "\n");
 		}
 	}
 
@@ -65,6 +65,6 @@ public class BankTransactionProcessor {
 		}
 
 		// If all validations pass
-		System.out.println("Valid Account and Amount ✅");
+		System.out.println("Valid Account and Amount");
 	}
 }
